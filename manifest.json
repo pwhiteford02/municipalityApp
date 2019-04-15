@@ -1,29 +1,22 @@
 {
-  "name": "municipalityApp",
-  "version": "1.0.0",
-  "description": "JavaScript/Node.js library package for file uploads in PWAs",
-  "main": "bin/upload_server",
-  "scripts": {
-    "start": "node bin/upload_server"
-  },
-  "author": "Howard Bates",
-  "license": "MIT",
-  "engines": {
-    "node": ">= 11.10.1"
-  },
-  "dependencies": {
-    "ejs": "latest",
-    "formidable": "latest",
-    "http2": "latest",
-    "jsdoc": "^3.5.5"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BackPacker777/FileUploadLibrary.git"
-  },
-  "bugs": {
-    "url": "https://github.com/BackPacker777/FileUploadLibrary/issues"
-  },
-  "homepage": "https://github.com/BackPacker777/FileUploadLibrary#readme"
+  "name": "ATM",
+  "short_name": "ATM",
+  "lang": "en-US",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "./public/images/splash192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./public/images/512x512png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1779ba",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait"
 }

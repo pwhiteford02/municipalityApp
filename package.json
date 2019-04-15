@@ -1,16 +1,31 @@
 {
-  "name": "municipalityapp",
+  "name": "atm-pwa",
   "version": "1.0.0",
-  "description": "",
+  "description": "a atm PWA",
   "main": "app.js",
   "scripts": {
+    "start": "node bin/upload_server",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 11.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwhiteford02/atm-pwa.git"
   },
   "author": "parker whiteford",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwhiteford02/atm-pwa/issues"
+  },
+  "homepage": "https://github.com/pwhiteford02/atm-pwa#readme",
   "dependencies": {
-    "eslint": "^5.16.0",
-    "formidable": "^1.2.1",
-    "readline-sync": "^1.4.9"
+    "ejs": "^2.6.1",
+    "formidable": "latest",
+    "fs": "latest",
+    "heroku": "latest",
+    "node": "latest",
+    "node.js": "latest"
   }
 }
