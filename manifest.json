@@ -10,7 +10,7 @@
       "type": "image/png"
     },
     {
-      "src": "./public/images/512x512png",
+      "src": "./public/images/splash512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

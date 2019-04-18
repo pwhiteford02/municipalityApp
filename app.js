@@ -55,8 +55,10 @@ class app {
             } else if (request.url.indexOf('.js') >= 0) {
                 DATA_HANDLER.renderDom(request.url.slice(1), 'application/javascript', httpHandler, 'utf-8');
             } else if (request.url.indexOf('.png') >= 0) {
-                DATA_HANDLER.renderDom(request.url.slice(1), 'image/png', httpHandler, 'binary');
-            } else if (request.url.indexOf('.woff') >= 0) {
+                DATA_HANDLER.renderDom(request.url.slice(1), 'image/png', httpHandler, 'binary');}
+            else if (request.url.indexOf('.woff') >= 0) {
+                DATA_HANDLER.renderDom(request.url.slice(1), 'application/font-woff', httpHandler, 'binary');
+            }else if (request.url.indexOf('.woff') >= 0) {
                 DATA_HANDLER.renderDom(request.url.slice(1), 'application/font-woff', httpHandler, 'binary');
             } else if (request.url.indexOf('.woff2') >= 0) {
                 DATA_HANDLER.renderDom(request.url.slice(1), 'application/font-woff2', httpHandler, 'binary');
@@ -69,8 +71,11 @@ class app {
             } else if (request.url.indexOf('.ico') >= 0) {
                 DATA_HANDLER.renderDom(request.url.slice(1), 'image/x-icon', httpHandler, 'binary');
             } else if (request.url.indexOf('/') >= 0) {
-                DATA_HANDLER.renderDom('./public/views/index.ejs', 'text/html', httpHandler, 'utf-8');
-            } else {
+                DATA_HANDLER.renderDom('./public/views/pages/index.ejs', 'text/html', httpHandler, 'utf-8');
+            } else if (request.url.indexOf('.jpg') >= 0) {
+                DATA_HANDLER.renderDom(request.url.slice(1), 'image/jpg', httpHandler, 'binary');
+            }
+            else {
                 DATA_HANDLER.renderDom(`HEY! What you're looking for: It's not here!`, 'text/html', httpHandler, 'utf-8');
             }
         }).listen(PORT);
