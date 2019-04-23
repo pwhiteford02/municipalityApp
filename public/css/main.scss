@@ -34,3 +34,20 @@
   height: 5%;
 }
 //}}
+
+//google sign in {
+gapi.signin2.render("div_tag_id", {
+"scope": "profile email openid",
+"width": 200,
+"height": 40,
+"longtitle": true,
+"theme": "dark",
+"onsuccess": function (googleUser) {
+// Called when the user signs in
+},
+"onfailure": function (e) {
+console.warn("Google Sign-In failure: " + e.error);
+}
+});
+
+//}
