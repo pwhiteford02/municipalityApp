@@ -3,15 +3,15 @@ const VERSION = 'v1.00.2';
 const cacheResources = async () => {
     const cacheFilesFirst = [
         './',
-        './public/views/index.ejs',
-        './public/views/header.ejs',
-        './public/views/footer.ejs',
-        './public/css/foundation.min.css',
-        './public/css/overrides.css',
-        './public/javascripts/main.js',
-        './public/javascripts/EventHandler.js',
-        './public/images/favicon.ico',
-        './public/images/photon.png',
+        '/public/views/index.ejs',
+        '/public/views/header.ejs',
+        '/public/views/footer.ejs',
+        '/public/css/foundation.min.css',
+        '/public/css/overrides.css',
+        '/public/javascripts/main.js',
+        '/public/javascripts/EventHandler.js',
+        '/public/images/favicon.ico',
+        '/public/images/photon.png',
     ];
     const cache = await caches.open(VERSION);
     return cache.addAll(cacheFilesFirst);
