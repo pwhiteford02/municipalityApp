@@ -11,7 +11,12 @@
   background-color: #0b2339;
   width: 24%;
   margin: 0%;
-  font-size: 1.9rem;
+  font-size: 65%;
+  color: rgb(254, 248, 255);
+}
+
+.button.clear{
+  color: white;
 }
 
 .button:hover{
@@ -31,23 +36,4 @@
   .menuBar{
   background-color: #0b2339;
   width: 100%;
-  height: 5%;
-}
-//}}
-
-//google sign in {
-gapi.signin2.render("div_tag_id", {
-"scope": "profile email openid",
-"width": 200,
-"height": 40,
-"longtitle": true,
-"theme": "dark",
-"onsuccess": function (googleUser) {
-// Called when the user signs in
-},
-"onfailure": function (e) {
-console.warn("Google Sign-In failure: " + e.error);
-}
-});
-
-//}
+  height: 5%;}

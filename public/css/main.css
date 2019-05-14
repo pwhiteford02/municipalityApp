@@ -5,7 +5,11 @@
   background-color: #0b2339;
   width: 24%;
   margin: 0%;
-  font-size: 1.9rem; }
+  font-size: 65%;
+  color: #fef8ff; }
+
+.button.clear {
+  color: white; }
 
 .button:hover {
   color: black;

@@ -30,8 +30,10 @@ class Main {
      * @returns {Promise<void>}
      */
     static async loadServiceWorker() {
+        console.log(`loading service worker`);
         if ('serviceWorker' in navigator) {
-            await navigator.serviceWorker.register('../../ServiceWorker.js').then((registration) => {
+            console.log(`loading service worjer`);
+            await navigator.serviceWorker.register('/ServiceWorker.js').then((registration) => {
                 console.log('BDH ServiceWorker registration succeeded. Scope is ' + registration.scope);
             }).catch((error) => {
                 console.log('Registration failed with ' + error);
